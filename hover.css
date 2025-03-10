@@ -1,0 +1,121 @@
+/* basic  zoom in */
+
+.profile1 img {
+   
+    transition: transform 1s ease-in-out;
+    
+}
+.profile1 img:hover{
+    transform: scale(1.5);
+}
+/* Quick zoom */
+
+.profile2 img {
+    transform-origin:0 0;
+    transition-duration: .1s;
+}
+.profile2 img:hover {
+    transform: scale(1.5);
+}
+/* point zoom */
+
+.profile3 img {
+    transform-origin: 96% 20%;
+    transition-duration: 1s;
+   
+}
+.profile3 img:hover {
+    transform: scale(2) ;
+}
+/* zoom in rotate */
+
+.profile4 img {
+    transform-origin: 50% 65%;
+    transition: transform 1s ease-in-out; 
+    
+}
+.profile4 img:hover {
+    transform: scale(2) rotate(25deg);
+} 
+/* zoom in slowmo */
+
+.profile5 img {
+    transform-origin: 50% 60%;
+    transition: transform 6s, filter 1s ease-in-out;
+    
+}
+.profile5 img:hover {
+    
+    transform: scale(3);
+}
+/* brightness pic */
+
+.profile6 img {
+    transition: transform 2s, filter 1.5s ease-in-out;
+    transform: center center;
+    filter: brightness(20%);
+}
+.profile6 img:hover {
+    filter: brightness(100%);
+    transform: scale(1.2);
+}
+/* horizontal zoom */
+
+.profile7 img {
+    transition: transform .5s ease-in-out;
+    transform: scale(1.4);
+    transform-origin: 100% 0;
+}
+.profile7 img:hover {
+    transform: scale(1.5) translate(30%);
+}
+/* vertical zoom   */
+
+.profile8 img {
+    transition: transform .5s ease-in-out;
+    
+    transform-origin: 0 0;
+}
+.profile8 img:hover {
+    transform: scale(2) translate(-30%);
+}
+/*blur out zoom in  */
+
+.profile9 img {
+    transition: transform 1s, filter 2s ease-out;
+    filter: blur(3px);
+    transform: scale(1.2);
+}
+.profile9 img:hover {
+    filter:  blur(0);
+    transform: scale(1.1);
+}
+/* colorize with zoom in */
+
+.profile10 img {
+    transition: transform .5s, filter 1.5s ease-in-out;
+    filter:grayscale(100%)
+}
+.profile10 img:hover {
+    filter:grayscale(0);
+    transform:scale(1.1)
+}
+
+.video-hover{
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    position: absolute;
+   
+    opacity: 0;
+    z-index: 2;
+  
+}
+
+.profile11 .video-hover:hover {
+
+    opacity: 1;
+}
