@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>final task</title>
+    <link rel="stylesheet" href="styles/sidebar.css" >
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/hover.css">
+<style>
+.photo{
+    width: 100%;    
+}
+
+.container{
+    font-family: roboto, arial, sans-serif;
+    padding-top: 57px;
+    padding-left:72px;
+    display: flex;
+    background-color: #f9f9f9;
+    padding-right: 20px;
+    
+  
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 16px;
+    padding-left: 16px;
+    padding-top: 20px;
+    padding-right:20px;
+}
+
+@media (max-width: 900px) {
+    .video-grid {
+        grid-template-columns: 1fr ;
+    }   
+}
+@media (min-width: 750px) and (max-width:1000px) {
+    .video-grid{
+        grid-template-columns: 1fr 1fr ;
+    }
+    
+}
+@media (mim-width:1000px) {
+    .video-grid {
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+    
+}
+
+.video-title{
+   
+   display: grid;
+   grid-template-columns: 50px 1fr;
+ 
+
+}
+.video-cont{
+    
+    
+    cursor: pointer;
+    width:100%;
+    
+    font-size: 14px;
+
+}
+
+
+.video-tech{
+    width:280px;
+    font-size: 13px;
+    margin-left: 2px;
+    font-family: robot, arial;
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.video-name{
+    font-size: 12px;
+    line-height: 8px;
+    color: gray;
+    margin-left: 4px;
+    cursor: pointer;
+
+}
+.profile1,
+.profile2,
+.profile3,
+.profile4,
+.profile5,
+.profile6,
+.profile7,
+.profile8,
+.profile9,
+.profile10,
+.profile11,
+.profile12{
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+
+}
+.video-time{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.854);
+    color: white;
+    right: 10px;
+    font-size: 12px;
+    padding: 4px;
+    bottom: 10px;
+    font-size: bold;
+    border-radius: 2px;
+}
+
+</style>
+</head>
+<body>
+    <div class="container"> 
+<div class="header">
+    <div class="leftside">
+        <img class="hamburger-menu"  src="photos/hamburger-menu.svg">
+        <img class="youtube-logo" src="photos/youtube-logo.svg">
+    </div>
+<div class="middle">
+    <input class="search" type="text" placeholder="Search">
+    <button class="icon">
+        <img  class="pic"  src="photos/search.svg">
+        <div class="tooltip">Search</div>
+    </button>
+   
+    <button class="voice">
+        <img class="mic"  src="photos/voice-search.svg">
+        <div class="tooltip">Search with your voice</div>
+</button>
+</div>
+<div class="rightside">
+    <div class="upload-icon">
+        <img class="upload"  src="photos/upload.svg">
+        <div class="tooltip">Create</div>
+    </div>
+    <div class="youtube-icon">
+        <img  class="youtube-apps" src="photos/youtube-apps.svg">
+        <div class="tooltip">YouTube apps</div>
+    </div>
+    <div class="notification-icon">
+    <img  class="notifications" src="photos/notifications.svg">
+    <div class="notifi-no">3</div>
+    <div class="tooltip">Notifications</div>
+    </div>
+    <img style="
+           width:36px;
+            height:36px;
+            border-radius: 36px 36px 36px 36px;
+            object-fit: cover;
+            margin-top: 5px;
+            cursor: pointer;
+    " src="photos/my-channel.jpg">
+</div>
+    
+
+</div>
+
+
+<!--Grid Container-->
+   <div class="video-grid">
+<!--1-pic--> 
+<div class="channel_layout">
+    <div class="profile1">
+        <img class="photo" src="photos/one.jpg">
+    <div class="video-time">14:20</div> 
+    </div>
+    <div class="video-title">
+        <div>
+        <img style="
+            width:36px;
+            height: 36px;
+            border-radius: 36px 36px 36px 36px;
+            object-fit: cover;
+            margin-top: 10px;
+    " src="photos/channel-1.jpg"> 
+    </div>
+    <div class="video-cont">     
+    <p class="video-tech">
+        Talking Tech and AI with Google CEO sundar Pichai!
+        </p>
+        <div class="video-name">
+        <p>Marques Brownlee</p>
+        <p>3.4M views &#183; 6 Months ago</p></div>
+        </div>
+   </div>
+</div>
+
+<!--2-pic--> 
+<div class="channel_layout">
+    <div class="profile2"><img class="photo" src="photos/second.jpg">
+    <div class="video-time">8:22</div>
+</div>
+    <div class="video-title">
+       <div>
+        <img style="
+            width:36px;
+            height:36px;
+            border-radius: 36px 36px 36px 36px;
+            object-fit: cover;
+            margin-top: 10px;
+    " src="photos/channel-2.jpg">   
+        </div>
+    <div class="video-cont">       
+        <p class="video-tech">
+            Try Not To Laugh Challenge #9
+            </p>
+            <div class="video-name">
+                <p>Markiplier</p>
+                <p>19M views &#183; 4 Months ago</p></div>
+            </div>
+    </div>    
+</div>
+<!--3-pic--> 
+<div class="channel_layout">
+        <div class="profile3">
+            <img class="photo" src="photos/third.jpg">
+        <div class="video-time">9:13</div>
+       </div>
+        <div class="video-title">
+            <div>
+            <img style="
+                width:36px;
+            height:36px;
+            border-radius: 36px 36px 36px 36px;
+                object-fit: cover;
+                margin-top: 10px;
+        " src="photos/channel-3.jpg">   
+        </div>     
+        <div class="video-cont">       
+            <p class="video-tech">
+                Crazy Tik Toks Taken Moments Before DISASTER
+                </p>
+                <div class="video-name">
+                    <p>SSSniperWolf</p>
+                    <p>12M views &#183; 1 year ago</p></div>
+                </div>
+        </div>
+</div>
+<!--4-pic--> 
+<div class="channel_layout">
+    <div class="profile4"><img class="photo" src="photos/fourth.jpg">
+        <div class="video-time">22:09</div> 
+    </div>
+   
+    <div class="video-title">
+        <div>
+        <img style="
+            width:36px;
+            height:36px;
+            border-radius: 36px 36px 36px 36px;
+            object-fit: cover;
+            margin-top: 10px;
+    " src="photos/channel-4.jpg">  
+    </div>      
+    <div class="video-cont">       
+        <p class="video-tech">
+            The Simplest Math Problem No One Can Solve-Collatz Conjecture
+            </p>
+            <div class="video-name">
+                <p>Veritasium</p>
+                <p>18M views &#183; 4 Months ago</p></div>
+            </div>
+    </div>
+</div>
+<!--5-pic--> 
+<div class="channel_layout">
+   <div class="profile5"> <img class="photo" src="photos/fifth.jpg">
+    <div class="video-time">11:17</div> 
+    </div>
+    <div class="video-title">
+        <div>
+        <img style="
+            width:36px;
+            height: 36px;
+            border-radius: 36px 36px 36px 36px;
+            object-fit: cover;
+            margin-top: 10px;
+    " src="photos/channel-5.jpg"> 
+    </div>
+    <div class="video-cont">     
+    <p class="video-tech">
+       Kadane's Algorithm to Maximum Sum Subarray Problem
+        </p>
+        <div class="video-name">
+        <p>CS Dojo</p>
+        <p>519k views &#183; 5 years ago</p></div>
+        </div>
+   </div>
+</div>
+<!--6-pic--> 
+<div class="channel_layout">
+    <div class="profile6"><img class="photo" src="photos/sixth.jpg">
+        <div class="video-time">19:59</div> 
+    </div>
+  
+    <div class="video-title">
+        <div>
+        <img style="
+           width:36px;
+            height:36px;
+            border-radius: 36px 36px 36px 36px;
+            object-fit: cover;
+            margin-top: 10px;
+    " src="photos/channel-6.jpg"> 
+    </div>       
+    <div class="video-cont">       
+        <p class="video-tech">
+            Anythink You Can Fit In The Circle Pay For
+            </p>
+            <div class="video-name">
+                <p>MrBeast</p>
+                <p>141M views &#183; 1 years ago</p></div>
+            </div>
+    </div>
+</div>
+
+<!--7-pic--> 
+<div class="channel_layout">
+   <div class="profile7"> <img class="photo" src="photos/seventh.jpg">
+   <div class="video-time">10:13</div> 
+   </div>
+    <div class="video-title">
+        <div>
+        <img style="
+            width:36px;
+            height: 36px;
+            border-radius: 36px 36px 36px 36px;
+            object-fit: cover;
+            margin-top: 10px;
+    " src="photos/channel-7.jpg"> 
+    </div>
+    <div class="video-cont">     
+    <p class="video-tech">
+        Why Planes Don't Fly Over Tibet
+        </p>
+        <div class="video-name">
+        <p>RealLifeLore</p>
+        <p>6.6M views &#183; 1 year ago</p></div>
+        </div>
+   </div>
+</div>
+<!--8-pic--> 
+<div class="channel_layout">
+    <div class="profile8"><img class="photo" src="photos/eighth.jpg">
+    <div class="video-time">7:12</div> 
+    </div>
+    <div class="video-title">
+        <div>
+        <img style="
+            width:36px;
+            height: 36px;
+            border-radius: 36px 36px 36px 36px;
+            object-fit: cover;
+            margin-top: 10px;
+    " src="photos/channel-8.jpg"> 
+    </div>
+    <div class="video-cont">     
+    <p class="video-tech">
+        Inside The World's Biggest Passenger Plane
+        </p>
+        <div class="video-name">
+        <p>Tech Vision</p>
+        <p>3.7M views &#183; 10 Months ago</p></div>
+        </div>
+   </div>
+</div>
+<!--9-pic-->
+<div class="channel_layout">
+        <div class="profile9"> <img class="photo" src="photos/thumbnail-9.jpg">
+        <div class="video-time">13:17</div> 
+    </div>
+    <div class="video-title">
+        <div>
+        <img style="
+            width:36px;
+            height: 36px;
+            border-radius: 36px 36px 36px 36px;
+            object-fit: cover;
+            margin-top: 10px;
+    " src="photos/channel-9.jpg"> 
+    </div>
+    <div class="video-cont">     
+    <p class="video-tech">
+        The SECRET to Super Human STRENGTH
+        </p>
+        <div class="video-name">
+        <p>ThenX</p>
+        <p>20M views &#183; 3 years ago</p></div>
+        </div>
+   </div>
+</div>
+<!--10-pic-->
+<div class="channel_layout">
+   <div class="profile10"> <img class="photo" src="photos/thumbnail-10.jpg">
+   <div class="video-time">7:53</div>
+   </div> 
+    <div class="video-title">
+        <div>
+        <img style="
+            width:36px;
+            height: 36px;
+            border-radius: 36px 36px 36px 36px;
+            object-fit: cover;
+            margin-top: 10px;
+    " src="photos/channel-10.jpg"> 
+    </div>
+    <div class="video-cont">     
+    <p class="video-tech">
+        How The World's Largest Cruise Ship Makes 30,000 Meals Every Day
+        </p>
+        <div class="video-name">
+        <p>Business Insider</p>
+        <p>14M views &#183; 1 year ago</p></div>
+        </div>
+   </div>
+</div>
+<!--11-pic-->
+<div class="channel_layout">
+   <div class="profile11"> <img class="photo" src="photos/thumbnail-11.jpg">
+    <video class="video-hover" autoplay loop muted controls src="videoplayback.mp4">
+
+    </video>
+     <div class="video-time">4:10</div> 
+     </div>
+    <div class="video-title">
+        <div>
+        <img style="
+            width:36px;
+            height: 36px;
+            border-radius: 36px 36px 36px 36px;
+            object-fit: cover;
+            margin-top: 10px;
+    " src="photos/channel-11.jpg"> 
+    </div>
+    <div class="video-cont">     
+    <p class="video-tech">
+        Dubai's Crazy Underwater Train and others Thinks #Only in Dubai
+        </p>
+        <div class="video-name">
+        <p>Destination Tips</p>
+        <p>3M views &#183; 1 year ago</p></div>
+        </div>
+   </div>
+</div>
+<!--12-pic-->
+<div class="channel_layout">
+    <div class="profile12"><img class="photo" src="photos/thumbnail-12.jpg">
+    <div class="video-time">4:51</div> 
+    </div>
+    <div class="video-title">
+        <div>
+        <img style="
+            width:36px;
+            height: 36px;
+            border-radius: 36px 36px 36px 36px;
+            object-fit: cover;
+            margin-top: 10px;
+    " src="photos/channel-12.jpg"> 
+    </div>
+    <div class="video-cont">     
+    <p class="video-tech">
+        What Would happen if you didn't drink water?-Mia Nacamulli
+        </p>
+        <div class="video-name">
+        <p>TED-Ed</p>
+        <p>12M views &#183; 5 years ago</p></div>
+        </div>
+   </div>
+</div>
+</div>
+
+
+<div class="sidebar">
+    <div class="sidebar-link">
+        <img src="photos/home.svg">
+        <div>Home</div>
+    </div>
+    <div class="sidebar-link">
+        <img src="photos/explore.svg">
+        <div>Explore</div>
+    </div>
+    <div class="sidebar-link">
+        <img src="photos/subscriptions.svg">
+        <div>Subcriptions</div>
+    </div>
+    <div class="sidebar-link">
+        <img src="photos/originals.svg">
+        <div>Originals</div>
+    </div>
+    <div class="sidebar-link">
+        <img src="photos/youtube-music.svg">
+        <div>YouTube Music</div>
+    </div>
+    <div class="sidebar-link">
+        <img src="photos/library.svg">
+        <div>Library</div>
+        </div>
+</div>
+
+
+</body>
+</html>
